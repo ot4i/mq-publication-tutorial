@@ -149,7 +149,7 @@
 												
 													<li> Open the IBM App Connect Enterprise Console. If you don't already have one, create and start a queue manager:<br><code><span class="cmdname">crtmqm</span> <span class="varname">TESTQM</span></code><br><code><span class="cmdname">strmqm</span> <span class="varname">TESTQM</span></code></li>
 												
-													<li> Next create the three queues and three subscriptions by typing the following commands:<br><code>runmqsc <span class="varname">TESTQM</span></code><br><code>define define ql(SUBQ1)</code><br><code>define define ql(SUBQ2)</code><br><code>define define ql(SUBQ3)</code><br><code>define sub(SUB1) TOPICSTR(EXAMPLE_TOPIC) DEST(SUBQ1)</code><br><code>define sub(SUB2) TOPICSTR(EXAMPLE_TOPIC) DEST(SUBQ2)</code><br><code>define sub(SUB3) TOPICSTR(EXAMPLE_TOPIC) DEST(SUBQ3)</code></li>
+													<li> Next create the three queues and three subscriptions by typing the following commands:<br><code>runmqsc <span class="varname">TESTQM</span></code><br><code>define ql(SUBQ1)</code><br><code>define ql(SUBQ2)</code><br><code>define ql(SUBQ3)</code><br><code>define sub(SUB1) TOPICSTR(EXAMPLE_TOPIC) DEST(SUBQ1)</code><br><code>define sub(SUB2) TOPICSTR(EXAMPLE_TOPIC) DEST(SUBQ2)</code><br><code>define sub(SUB3) TOPICSTR(EXAMPLE_TOPIC) DEST(SUBQ3)</code></li>
 												
 											
 											</ol>
