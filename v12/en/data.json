@@ -65,14 +65,14 @@
             "summary": 
 			{
                 "overviewName": "OVERVIEW",
-                "_overviewComment": "A short description of what happens in this tutorial, and an optional short explanation of the ACE concepts used in this tutorial if necessary for context. What background knowledge must the user have for this to make sense?",
+                "_overviewComment": "A short description of what happens in this tutorial, and an optional short explanation of the concepts used in this tutorial if necessary for context. What background knowledge must the user have for this to make sense?",
                 "sections": 
 				[
                     {
                         "section": "This tutorial demonstrates a simple message flow that is driven from a JSON input message over HTTP. An HTTPInput node receives the message and passes it unchanged to an HTTPReply node which echoes the same message back to the Requestor. The HTTPInput node also drives an HTTP Header node which deletes the HTTP input header, before invoking a Mapping node whose role is to set a message topic in the logical tree. Finally, a Publication node publishes to the defined MQ topic. A second message flow is provided which receives messages from three separate input queues, each of which receive messages courtesy of MQ subscriptions to the same topic used by the publication flow."
                     },
                     {
-                        "section": "The tutorial requires an ACE integration node owned server, or a standalone server."
+                        "section": "The tutorial requires an integration node owned server, or a standalone server."
                     },
                     {
                         "section": "In IBM App Connect Enterprise, an application is a container for all the resources that are required to create a solution. This tutorial provides an application to hold the message flow. This scenario uses the Publication node which requires your integration node or server to be associated with a local queue manager, so an MQ installation is required. There are no other pre-requisites needed by the scenario."
